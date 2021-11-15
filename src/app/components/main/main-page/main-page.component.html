@@ -1,0 +1,9 @@
+<app-button-panel
+  (buttonType)="redirectByType($event)"
+></app-button-panel>
+<app-owner-table
+  [owners] = owners
+  (ownerId)= "setId($event)">
+</app-owner-table>
+
+

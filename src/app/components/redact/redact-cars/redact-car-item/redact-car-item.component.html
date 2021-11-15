@@ -1,0 +1,9 @@
+<th>
+  <form action="" [formGroup]="car">
+    <input type="text" value="{{cars.govNum}}" formControlName="govNum">
+    <input type="text" value="{{cars.carBrand}}" formControlName="carBrand">
+    <input type="text" value="{{cars.carModel}}" formControlName="carModel">
+    <input type="text" value="{{cars.prodYear}}" formControlName="prodYear">
+  </form>
+  <button mat-raised-button (click)="removeCar()">X</button>
+</th>

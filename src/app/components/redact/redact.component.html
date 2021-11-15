@@ -1,0 +1,6 @@
+<app-redact-owner
+  [currentOwner] = currentOwner
+  (ownerData)="setOwner($event)"
+></app-redact-owner>
+<app-redact-cars [currentOwner] = currentOwner></app-redact-cars>
+<app-redact-buttons (saveEvent)="submit($event)"></app-redact-buttons>

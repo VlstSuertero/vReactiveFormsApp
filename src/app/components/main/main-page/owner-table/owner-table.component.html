@@ -1,0 +1,18 @@
+<table *ngIf="true">
+  <tr>
+    <td><p>Last Name:</p></td>
+    <td><p>First Name:</p></td>
+    <td><p>Middle Name:</p></td>
+    <td><p>Cars</p></td>
+  </tr>
+
+  <tr *ngFor="let elem of owners"
+      (click)="switchActive(elem.id)"
+      [ngClass]="{'active': active}"
+  >
+    <td><p>{{elem.lastName}}</p></td>
+    <td><p>{{elem.firstName}}</p></td>
+    <td><p>{{elem.middleName}}</p></td>
+    <td><p>{{elem.cars.length}}</p></td>
+  </tr>
+</table>

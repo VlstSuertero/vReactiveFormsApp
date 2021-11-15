@@ -1,0 +1,18 @@
+<div class="redact-car-container">
+  <form action="">
+    <tr>
+      <th><p>Number</p></th>
+      <th><p>Brand</p></th>
+      <th><p>Model</p></th>
+      <th><p>Year</p></th>
+    </tr>
+
+    <tr *ngFor="let elem of currentOwner[0].cars">
+      <app-redact-car-item [cars] = elem></app-redact-car-item>
+    </tr>
+
+  </form>
+
+  <button mat-raised-button (click)="addNewCar()">Add New Car</button>
+
+</div>

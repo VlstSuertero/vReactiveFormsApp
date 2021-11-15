@@ -1,0 +1,14 @@
+<div class="redact-owner-container" [formGroup]="owner">
+  <div class="red-name-field">
+    <p>Last Name: </p>
+    <input type="text" value="{{owner.lastName}}" formControlName="lastName">
+  </div>
+  <div class="red-name-field">
+    <p>First Name: </p>
+    <input type="text" value="{{owner.firstName}}" formControlName="firstName">
+  </div>
+  <div class="red-name-field">
+    <p>Middle Name: </p>
+    <input type="text" value="{{owner.middleName}}" formControlName="middleName">
+  </div>
+</div>
